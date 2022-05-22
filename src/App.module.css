@@ -33,11 +33,13 @@ body{
 .container .left_side input{
    width: 100%;
    border: 0;
-   border-bottom: 1px solid rgba(150, 163, 171, 0.5);
-   font-size: 14px;
+   border: 1px solid rgba(150, 163, 171, 0.5);
+   border-radius: 10px;
+   font-size: 30px;
    outline: 0;
    padding: 10px 2px;
    margin-bottom: 20px;
+   height: 50px;
 }
 .container .left_side button{
    background-color: #227c9d;
@@ -53,7 +55,7 @@ body{
    transition:all ease 0.3s;
 }
 .container .left_side button:hover{
-   opacity: 0.8;
+   background-color: #0fabe4;
 }
 .container .right_side{
    flex: 1;
@@ -65,4 +67,30 @@ body{
    display: grid;
    grid-template-columns: 1fr 1fr;
    gap: 20px;
+}
+.gridBig{
+   flex: 1;
+   display: flex;
+   margin-bottom: 50px;
+
+}
+.container .right_side .arrow{
+   position: absolute;
+   background-color: #227c9d;
+   width: 70px;
+   height: 70px;
+   border-radius: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   cursor: pointer;
+   margin-left: -35px;
+   margin-top: 140px;
+   transition: all ease 0.3s;
+}
+.container .right_side:hover{
+   opacity: 0.9;
+}
+.container .right_side .arrow:hover{
+   background-color: #0fabe4;
 }

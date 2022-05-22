@@ -22,10 +22,16 @@
    font-size: 23px;
    font-weight: bold;
    margin-top: 5px;
+   margin-bottom: 20px;
 }
 .gridInfo{
-   font-size: 12px;
-   margin-top: 14px;
+   margin-top: 20px;
    font-weight: 600;
+   font-size: 12px;
 
+}
+.yourImc{
+   font-size: 17px;
+   margin-bottom: 30px;
+   font-weight: 600;
 }
