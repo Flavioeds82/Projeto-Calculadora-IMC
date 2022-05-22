@@ -9,4 +9,4 @@
 - `npm run dev`
 
 #
-<img src="readme-image.png" alt=""/>
+<img src="./src/readme-image.png" alt=""/>
