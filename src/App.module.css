@@ -9,8 +9,11 @@ body{
    width: 100%;
 }
 .container_header{
+   display: flex;
    max-width: 70%;
    margin: 40px auto;
+   align-items: center;
+   
 }
 .container{
    display: flex;
@@ -102,6 +105,14 @@ body{
 .container .right_side .arrow:hover{
    background-color: #0fabe4;
 }
+.footer{
+   color: #6a7d8b;
+   margin-top: 50px;
+   font-weight: 400;
+   text-align: center;
+
+}
+
 @media(max-width: 1050px){
    .container{
       width: 100vw;

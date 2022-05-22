@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import s from './App.module.css';
-import img1 from "./images/powered.png";
+import img1 from "./images/powered-cortado.png";
 import img2 from "./images/leftarrow.png";
 import {levels, calculateImc, Level} from './helpers/helper_imc';
 import { GridItem } from './components/GridItem';
@@ -27,7 +27,7 @@ function App() {
 		<div className={s.main}>
 		 <header>
 			 <div className={s.container_header}>
-				 <img src={img1} alt="" width={150}/>
+				 <img src={img1} alt="" width={80}/>
 			 </div>
 		 </header>
 		 <div className={s.container}>
@@ -72,6 +72,7 @@ function App() {
 				
 			 </div>
 		 </div>
+		 <div className={s.footer}>Created by Flávio Eduardo during the b7web React course </div>
 		</div>
 	)
 }
