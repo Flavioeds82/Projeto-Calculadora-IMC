@@ -39,14 +39,16 @@ function App() {
 				placeholder='Digite eu peso (Kg)'
 				value={weight_field > 0 ? weight_field : ''}
 				onChange={e => setWeight((parseFloat(e.target.value)))}
+				disabled={showItem ? true : false}
 				/>
 				<input 
 				type="number"
-				placeholder='Digite sua Altura (metros)'
+				placeholder='Digite sua Altura (Mts)'
 				value={height_field > 0 ? height_field : ''}
 				onChange={e => setHeight((parseFloat(e.target.value)))}
+				disabled={showItem ? true : false}
 				/>
-				<button onClick={imc}>Calcular</button>
+				<button onClick={imc} disabled={showItem ? true : false}>Calcular</button>
 			 </div>
 			 <div className={s.right_side}>
 				 {!showItem &&
