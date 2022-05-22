@@ -16,10 +16,6 @@ body{
    max-width: 900px;
    margin: auto;
 }
-.right_side{
-   flex: 1;
-   margin-left: 40px;
-}
 .left_side{
    flex: 1;
    margin-right: 40px;
@@ -47,6 +43,7 @@ body{
    background-color: #227c9d;
    color: #fff;
    font-size: 15px;
+   font-weight: bold;
    border: 0;
    border-radius: 10px;
    padding: 15px 0;
@@ -57,4 +54,15 @@ body{
 }
 .container .left_side button:hover{
    opacity: 0.8;
+}
+.container .right_side{
+   flex: 1;
+   margin-left: 40px;
+   display: flex;
+}
+.container .right_side .grid{
+   flex: 1;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 20px;
 }
