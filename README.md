@@ -7,3 +7,6 @@
 
 ### Para rodar :
 - `npm run dev`
+
+#
+<img src="readme-image.png" alt=""/>
