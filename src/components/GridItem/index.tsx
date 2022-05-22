@@ -1,4 +1,7 @@
-import { Level } from "../../helpers/helper_imc"
+import { Level } from "../../helpers/helper_imc";
+import s from './GridItem.module.css';
+import upImage from '../../images/up.png';
+import downImage from '../../images/down.png';
 
 type Props = {
    data: Level;
@@ -6,8 +9,18 @@ type Props = {
 
 export function GridItem({data}:Props){
    return(
-      <div>
-         ****
+      <div className={s.main} style={{backgroundColor:data.color}}>
+         <div className={s.gridIcon}>
+            <img src={data.icon === 'up'? upImage : downImage} alt='' width='30'/>
+         </div>
+         <div className={s.gridTitle}>{data.title}</div>
+         <div className={s.gridInfo}>
+            <>
+
+               IMC está entre <strong>{data.imc[0]}</strong>  e  <strong>{data.imc[1]}</strong>
+         
+            </>
+         </div>
       </div>
    )
 }
